@@ -75,7 +75,6 @@ class RNAdapter implements KeycloakAdapter {
       // See for more details https://github.com/proyecto26/react-native-inappbrowser#authentication-flow-using-deep-linking
       const res = await InAppBrowser.openAuth(
         logoutUrl,
-        this.client.redirectUri!,
         this.initOptions.inAppBrowserOptions
       );
 
